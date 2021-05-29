@@ -10,7 +10,7 @@ body{
     display: flexbox;
     background-color: rgba(0, 0, 139);
     padding: 0;
-    margin-left: 35vw;
+    margin-left: 35%;
     position: fixed;
 }
 .navBar .button{
