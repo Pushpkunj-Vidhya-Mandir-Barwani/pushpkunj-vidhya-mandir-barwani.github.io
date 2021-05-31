@@ -1,28 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Home - Pushpkunj Vidhya Mandir</title>
-</head>
-<body>
-    <div class="navBar">
-        <button href="index.html" class="button" id="home">Home</button>
-        <button href="facilities.html" class="button" onclick="location.replace('facilities.html','index.html')">Facilities</button>
-        <button href="academics.html" class="button" onclick="location.replace('academics.html','index.html')">Academics</button>
-        <button href="aboutus.html" class="button" onclick="location.replace('aboutus.html', 'index.html')">About Us</button>
-    </div>
-    <div class="img">
-        <div class="logos">
-            <center>
-                <img src="assets/logo2.png" width="15%" class="logo2">
-                <img src="assets/school.png" width=50.5%>
-                <img src="assets/icon.png" width="15%">
-            </center>
-        </div>
-    </div>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+body{
+    background: rgb(15, 139, 71);
+}
+.navBar{
+    display: flexbox;
+    margin: auto;
+    flex-direction: row, row-reverse;
+    background-color: rgba(0, 0, 139);
+    justify-items: center;
+    position: fixed;
+    left: 35%;
+    flex-direction: row-reverse;
+    height: 5.950vh;
+}
+.navBar .button{
+    float: left;
+    background: transparent;
+    color: azure;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-size: 3.8vh;
+    border-color: transparent;
+    padding-bottom: 0.8vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: auto;
+}
+.navBarContainer{
+    display: block;
+    position: fixed;
+    padding-right: 100vw;
+    height: 5.950vh;
+    background-color: rgb(0, 0, 139);
+}
+.navBar .button:hover{
+    background: rgba(20, 120, 220, 0.8);
+    color: azure;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-size: 3.8vh;
+    border-color: transparent;
+}
+.code{
+    background-color: black;
+    color: white;
+}
+.navBar #home{
+    background-color: deepskyblue;
+}
+.navBar #about-us{
+    background-color: deepskyblue;
+}
+.navBar #academics{
+    background-color: deepskyblue;
+}
+.navBar #facilities{
+    background-color: deepskyblue;
+}
+.aboutUs{
+    padding-top: 40px;
+}
+.text{
+    padding: 10px;
+    display: flex;
+    background-color: mediumturquoise;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 3vh;
+    color: rgb(0, 0, 0, 0.8);
+    font-family: 'Poppins';
+    text-align: justify;
+}
+.img{
+    padding-top: 4vh;
+}
+button{
+    background: transparent;
+    border-style: none;
+}
+#logo2{
+    margin-left: 0.750vh;
+}
+#img{
+    float: left;
+}
+*::selection{
+    background-color: darkgreen;
+    color: white;
+}
+Img::selection{
+    background-color: rgb(45, 137, 245);
+}
+#text{
+    margin-top: 3vh;
+    text-align: center;
+    padding: 10px;
+    display: inline-flex;
+    background-color: chartreuse;
+    border-radius: 10px;
+    width: auto;
+    font-size: 7vh;
+    color: black;
+    font-family: 'Poppins';
+    text-align: center;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+}
+#text2{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    background-color: darkblue;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 3vh;
+    color: white;
+    font-family: 'Poppins';
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+}
+#text3{
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    background-color: darkblue;
+    border-radius: 0;
+    width: 30%;
+    font-size: 3vh;
+    color: white;
+    font-family: 'Poppins';
+}
+#text4{
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    background-color: darkblue;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 3vh;
+    color: white;
+    font-family: 'Poppins';
+    border-start-end-radius: 0px;
+    border-start-start-radius: 0px;
+}
