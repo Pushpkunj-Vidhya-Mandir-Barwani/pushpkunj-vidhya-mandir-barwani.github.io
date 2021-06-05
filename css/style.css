@@ -14,11 +14,12 @@ body{
     background-color: rgba(0, 0, 139);
     justify-items: center;
     position: fixed;
-    left: 35%;
+    left: 32.7%;
     flex-direction: row-reverse;
     height: 5.950vh;
 }
 .navBar .button{
+    user-select: none;
     float: left;
     background: transparent;
     color: azure;
@@ -75,6 +76,9 @@ body{
     color: rgb(0, 0, 0, 0.8);
     font-family: 'Poppins';
     text-align: justify;
+}
+.container{
+    padding-top: 10vh;
 }
 .img{
     padding-top: 4vh;
@@ -147,4 +151,27 @@ Img::selection{
     font-family: 'Poppins';
     border-start-end-radius: 0px;
     border-start-start-radius: 0px;
+}
+.computerButton, .audioVisualClassroomsButton, .biologyButton, .chemistryButton, #directorAndPrincipal{
+    margin-top: 1vh;
+}
+#physicsButton{
+    width: 20vw;
+    border-radius: 1vw;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 4vh;
+    background: red;
+    user-select: none;
+}
+#physicsButton:active{
+    background: rgb(255, 0, 0, 0.9);
+}
+#principal{
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+}
+#directorAndPrincipal{
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
 }
