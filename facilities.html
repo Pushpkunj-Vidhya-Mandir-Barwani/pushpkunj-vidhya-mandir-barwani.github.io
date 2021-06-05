@@ -17,5 +17,47 @@
             <button href="aboutus.html" class="button" onclick="location.replace('aboutus.html','facilities.html')">About Us</button>
         </div>
     </div>
+    <center>
+        <div class="container">
+            <p class="text">शिक्षा की सभी अत्याधुनिक सुविधाएं.</p>
+            <button onclick="fun1()" id="physicsButton" class="physicsButton">Physics lab</button>
+            <p><span id="dots"></span><span id="more"></span></p>
+            
+            <button onclick="fun1()" id="physicsButton" class="chemistryButton">Chemistry lab</button>
+            <p><span id="dots"></span><span id="more"></span></p>
+            
+            <button onclick="fun1()" id="physicsButton" class="biologyButton">Biology lab</button>
+            <p><span id="dots"></span><span id="more"></span></p>
+            
+            <button onclick="fun1()" id="physicsButton" class="audioVisualClassroomsButton">Audio - Visual Classrooms</button>
+            <p><span id="dots"></span><span id="more"></span></p>
+            
+            <button onclick="fun1()" id="physicsButton" class="computerButton">Computer lab with internet access to all students</button>
+            <p><span id="dots"></span><span id="more"></span></p>
+            <script>
+                function fun1(){
+                    var dots = document.getElementById('dots');
+                    var mt = document.getElementById('more');
+                    var bt = document.getElementById('physicsButton');
+                    if (dots.style.display === 'none') {
+                        dots.style.display = "inline";
+                        mt.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        mt.style.display = "inline";
+                    }
+                }
+            </script>
+            <div class="DirectorAndPrincipal">
+                <p class="text" id="directorAndPrincipal">Director: Dr.O.P.Khandelwal ( Retired Professor of Physics, Government P.G.College Barwani. M.Sc.Ph.D.)
+                    <p class="text" id="principal">Principal: Er. Madhav Khandelwal ( B.E. , M.Tec.)</p>
+                </p>
+            </div>
+        </div>
+        <iframe src="assets/school.mp4"frameborder="0" width="530px" height="300px"></iframe>
+    </center>
+    <script>
+
+    </script>
 </body>
 </html>
